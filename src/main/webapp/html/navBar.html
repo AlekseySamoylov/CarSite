@@ -1,0 +1,49 @@
+<div class="container-fluid">
+    <div class="row">
+
+        <nav role="navigation" class="navbar navbar-inverse">
+            <div class="container">
+                <div class="navbar-header header">
+
+                    <div class="contain-menu">
+                        <div class="entry-menu container">
+                            <div class="row">
+                                <div class="col-lg-12 hide-menu">
+                                    <h1><a href="#">Автосервис Пермь</a></h1>
+
+                                    <p>Качество - наш девиз!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button id="nav-bar-button" type="button" data-target="#navbarCollapse" data-toggle="collapse"
+                                class="entry-menu navbar-toggle">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                </div>
+                <div id="navbarCollapse" class="collapse navbar-collapse navbar-right">
+                    <ul class="nav nav-pills">
+                        <li ng-class="{active: panel.isSelected(1)}"><a href ng-click="panel.select(1)">Главная</a>
+                        </li>
+                        <li ng-class="{active: panel.isSelected(2)}"><a href ng-click="panel.select(2)">Цены</a>
+                        </li>
+                        <li ng-class="{active: panel.isSelected(3)}"><a href
+                                                                        ng-click="panel.select(3)">Авторемонт</a>
+                        </li>
+                        <li ng-class="{active: panel.isSelected(4)}"><a href
+                                                                        ng-click="panel.select(4)">Автозапчасти</a>
+                        </li>
+                        <li ng-class="{active: panel.isSelected(5)}"><a href ng-click="panel.select(5)">Контакты</a>
+                        </li>
+                        <li ng-class="{active: panel.isSelected(6)}"><a href ng-click="panel.select(6)">Видео</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+</div>
+<script></script>

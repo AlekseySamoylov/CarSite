@@ -35,4 +35,30 @@
         }
     });
 
+    app.directive('leftPanel', function(){
+        return {
+            restrict:   'E',
+            templateUrl: 'html/leftPanel.html',
+        }
+    });
+
+    app.directive('searchField', function (){
+     return {
+         restrict: 'E',
+         templateUrl: 'html/searchField.html',
+     }
+    });
+    app.directive('navBar', function(){
+       return {
+           restrict: 'E',
+           templateUrl: 'html/navBar.html'
+       }
+    });
+    app.directive('videoArchive', function(){
+        return {
+            restrict: 'E',
+            templateUrl: 'html/videoArchive.html',
+        }
+    });
+
 })();

@@ -7,37 +7,52 @@
 
     app.controller('NavigationPanel', function () {
         this.tabNumber = 1;
-        this.select = function(number){
+        this.select = function (number) {
             this.tabNumber = number;
-            switch (number){
+            switch (number) {
                 case 1:
-                    console.log('Hello!!!' + this.tabNumber);
+                    if (screen.width < 768) {
+                        document.getElementById("nav-bar-button").click();
+                    }
                     break;
                 case 2:
-                    console.log('Hello!!!' + this.tabNumber);
+                    if (screen.width < 768) {
+                        document.getElementById("nav-bar-button").click();
+                    }
                     break;
                 case 3:
-                    console.log('Hello!!!' + this.tabNumber);
+                    if (screen.width < 768) {
+                        document.getElementById("nav-bar-button").click();
+                    }
                     break;
                 case 4:
-                    console.log('Hello!!!' + this.tabNumber);
+                    if (screen.width < 768) {
+                        document.getElementById("nav-bar-button").click();
+                    }
                     break;
                 case 5:
-                    console.log('Hello!!!' + this.tabNumber);
+                    if (screen.width < 768) {
+                        document.getElementById("nav-bar-button").click();
+                    }
+                    break;
+                case 6:
+                    if (screen.width < 768) {
+                        document.getElementById("nav-bar-button").click();
+                    }
                     break;
 
             }
         }
 
-        this.isSelected = function(number) {
+        this.isSelected = function (number) {
             if (this.tabNumber == number) {
                 return true
             }
             else return false;
         }
+
+
     });
-
-
 
 
     app.controller('HiController', function ($scope, $http) {
